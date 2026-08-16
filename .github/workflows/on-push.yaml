@@ -1,9 +1,12 @@
 name: on-push-yaml
+
 on: push
+
 jobs:
   mybuild:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Show what the triggrs run
-        run: 
+      - name: Show what the trigger runs
+        run: |
           echo "Event name : $GITHUB_EVENT_NAME"
