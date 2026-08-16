@@ -10,5 +10,5 @@ jobs:
       - name: Print Multiple Lines
         run: |
           echo "Hi"
-          echo "Hello"
-          echo "How are you"
+          echo "Hello : $RUNNER_OS"
+          echo "which git : $GITHUB_REPOSITORY"
