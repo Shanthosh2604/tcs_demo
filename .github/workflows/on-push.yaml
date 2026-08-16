@@ -1,0 +1,9 @@
+name: on-push-yaml
+on: push
+jobs:
+  mybuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show what the triggrs run
+        run: 
+          echo "Event name : $GITHUB_EVENT_NAME"
